@@ -93,9 +93,12 @@ SUPABASE_URL: Your Supabase API URL
 SUPABASE_KEY: Your Supabase API Key
 use .env.example as example
 
-- for test propose you can use this supabase credaential
-  SUPABASE_URL='https://rljmvdkvedtzmgkznivz.supabase.co'
-  SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJsam12ZGt2ZWR0em1na3puaXZ6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODYyMjE0NDYsImV4cCI6MjAwMTc5NzQ0Nn0.B_citWnEEaxa0OhpldLUBdIRqa2wKhl4Hioiiun3oKM'
+For testing purposes, you can use the following Supabase credentials:
+
+SUPABASE_URL = 'https://rljmvdkvedtzmgkznivz.supabase.co'
+SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJsam12ZGt2ZWR0em1na3puaXZ6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODYyMjE0NDYsImV4cCI6MjAwMTc5NzQ0Nn0.B_citWnEEaxa0OhpldLUBdIRqa2wKhl4Hioiiun3oKM';
+
+Please note that these credentials are provided only for testing purposes and should not be used in production environments.
 
 #### Frontend Configuration:
 

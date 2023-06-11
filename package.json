@@ -10,7 +10,7 @@
     "build:shared": "yarn workspace shared run build",
     "build:frontend": "yarn workspace frontend run build",
     "build:backend": "yarn workspace backend run build",
-    "build": "yarn run build:backend && yarn run build:frontend && yarn run build:shared",
+    "build": "yarn run generate-db-types && yarn run build:shared && yarn run build:backend && yarn run build:frontend",
     "dev:frontend": "yarn workspace frontend run dev",
     "start:backend": "yarn workspace backend run start",
     "generate-db-types": " npx supabase gen types typescript --project-id \"rljmvdkvedtzmgkznivz\" --schema public > shared/src/types/database/index.ts && yarn run build:shared"
