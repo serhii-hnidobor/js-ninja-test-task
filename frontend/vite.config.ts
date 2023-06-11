@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import * as path from 'path';
 import viteSvgr from 'vite-plugin-svgr';
+import { compression } from 'vite-plugin-compression2';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -17,5 +18,23 @@ export default defineConfig({
       '@services': path.resolve(__dirname, './src/services'),
     },
   },
-  plugins: [react(), viteSvgr()],
+  plugins: [
+    react(),
+    viteSvgr(),
+    compression({
+      algorithm: 'brotliCompress',
+      exclude: [
+        /\.(br)$/,
+        /\.(gz)$/,
+        /\.(webp)$/,
+        /\.(woff)$/,
+        /\.(woff2)$/,
+        /\.(jpg)$/,
+        /\.(jpeg)$/,
+        /\.(png)$/,
+        /\.(gif)$/,
+      ],
+      deleteOriginalAssets: true,
+    }),
+  ],
 });

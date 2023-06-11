@@ -4,27 +4,51 @@ This is a Hero CRUD (Create, Read, Update, Delete) application built with Node.j
 
 # Features
 
-## Create a new hero:
+### Create a New Superhero
 
-Users can add new heroes to the application by providing details such as the hero's name, superpowers, and description.
+Users can add a new superhero to the application by providing the following details:
+- Nickname
+- Real Name
+- Catchphrase
+- Description
+- Superpowers (as an array of strings)
+- Images (multiple images can be assigned to a superhero)
 
-## Update hero details:
+### Update Superhero Details
 
-Users can modify the information of existing heroes, including their names, superpowers, images, and descriptions.
+Users can modify the information of existing superheroes, including:
+- Nickname
+- Real Name
+- Catchphrase
+- Description
+- Superpowers
+- Images (edit, assign, or remove images)
 
-## View hero details:
+### List All Superheroes
 
-Users can view the details of a specific hero, including their name, superpowers,images, and description.
+Users can view a list of all superheroes in the application. Each item in the list displays:
+- Nickname
+- One image representing the superhero
 
-## List all heroes:
+Pagination is implemented, allowing users to view 5 superheroes at a time.
 
-Users can see a list of all the heroes currently available in the application, displaying their nickname and one image.
+### View Superhero Details
 
-## Delete heroes:
+Users can access detailed information about a specific superhero, including:
+- Nickname
+- Real Name
+- Catchphrase
+- Description
+- Superpowers
+- All assigned images for the superhero
 
-Users can remove heroes from the application, effectively deleting them from the system.
+### Delete Superheroes
 
-## User authentication:
+Users can remove superheroes from the application, effectively deleting them from the system. This action permanently removes the superhero and their associated images.
+
+## Additional features
+
+###  User authentication:
 
 The application utilizes Supabase for user authentication, ensuring secure access to the CRUD operations.
 
