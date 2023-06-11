@@ -1,0 +1,24 @@
+{
+  "name": "shared",
+  "private": "true",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=16 <19",
+    "npm": ">=8 <9"
+  },
+  "scripts": {
+    "lint:js": "npx eslint \"src/**/*.ts\" --max-warnings=0",
+    "lint": "yarn run lint:js",
+    "build:ts": "tsc && tsc-alias -p tsconfig.json && node replace-secret.js",
+    "build": "yarn run build:ts"
+  },
+  "devDependencies": {
+    "@types/amqplib": "0.8.2",
+    "tsc-alias": "1.6.11"
+  },
+  "dependencies": {
+    "dotenv": "^16.1.4",
+    "replace-in-file": "^7.0.1"
+  }
+}

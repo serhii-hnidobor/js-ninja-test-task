@@ -1,0 +1,17 @@
+extends:
+  - ../.eslintrc.yml
+
+env:
+  browser: true
+
+settings:
+  react:
+    version: '18'
+
+plugins:
+  - react
+  - react-hooks
+
+rules:
+  react-hooks/exhaustive-deps:
+    - error
